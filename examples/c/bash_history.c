@@ -14,8 +14,7 @@ static int libbpf_print_fn(enum libbpf_print_level level, const char *format, va
 
 int main(int argc, char **argv)
 {
-	struct uprobe_bpf *skel;
-	long uprobe_offset;
+	struct bash_history_bpf *skel;
 	int err, i;
 
 	libbpf_set_strict_mode(LIBBPF_STRICT_ALL);
